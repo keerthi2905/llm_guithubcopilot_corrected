@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Polaroid Online Shop</title>
+    <style>
+        body {
+            background: linear-gradient(to right, #ff9966, #ff5e62);
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            text-align: center;
+            padding: 10px;
+        }
+        .header button {
+            margin: 5px;
+            padding: 10px;
+            font-size: 15px;
+        }
+        .product {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .product div {
+            margin: 20px;
+            text-align: center;
+        }
+        .product img {
+            width: 200px;
+            height: 200px;
+        }
+        .footer {
+            text-align: center;
+            padding: 20px;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #f8f9fa;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Polaroid Shop</h1>
+        <button onclick="home()">Home</button>
+        <button onclick="products()">Products</button>
+    </div>
+    <div class="product">
+        <div>
+            <img src="polaroid1.jpg" alt="Polaroid 1">
+            <h2>Polaroid 1</h2>
+            <p>Description of Polaroid 1</p>
+        </div>
+        <div>
+            <img src="polaroid2.jpg" alt="Polaroid 2">
+            <h2>Polaroid 2</h2>
+            <p>Description of Polaroid 2</p>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2022 Polaroid Shop</p>
+    </div>
+    <script>
+        function home() {
+            alert("You clicked on Home!");
+        }
+        function products() {
+            alert("You clicked on Products!");
+        }
+    </script>
+</body>
+</html>
